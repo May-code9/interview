@@ -1,18 +1,25 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+  <master-layout :title="'Orders'">
+    <div class="home px-5 md:px-7">
+      
+    </div>
+  </master-layout>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import MasterLayout from '../components/MasterLayout.vue'
 
 export default {
-  name: "Home",
+  name: 'HomePage',
   components: {
-    HelloWorld,
-  },
-};
+    MasterLayout
+  }
+}
 </script>
+
+<style scoped>
+.add_order {
+  @apply p-4 bg-ezblue-400 text-white rounded-full absolute right-4 bottom-28 cursor-pointer shadow hover:shadow-lg;
+}
+</style>

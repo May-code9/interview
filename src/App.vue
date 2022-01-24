@@ -1,9 +1,15 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div class="bg-gray-100">
+    <div
+      class="max-w-screen-sm mx-auto h-screen bg-ezwhite-100 sm:border border-ezblack-200 relative"
+    >
+      <router-view v-slot="{ Component }">
+        <transition name="view">
+          <component :is="Component" />
+        </transition>
+      </router-view>
+    </div>
   </div>
-  <router-view />
 </template>
 
 <style>
