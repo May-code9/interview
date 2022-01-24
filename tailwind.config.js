@@ -1,4 +1,5 @@
 const colors = require('tailwindcss/colors')
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   purge: ['./public/**/*.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
@@ -29,11 +30,10 @@ module.exports = {
       }
     },
     screens: {
-      sm: '640px',
-      md: '768px',
-      lg: '1024px',
-      xl: '1280px',
-      '2xl': '1536px'
+      xxs: '375px',
+      xs: '425px',
+      ...defaultTheme.screens,
+      xxl: '1536px'
     },
     colors: {
       transparent: 'transparent',

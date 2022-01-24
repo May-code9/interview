@@ -1,7 +1,7 @@
 <template>
   <div class="bg-gray-100">
     <div
-      class="max-w-screen-sm mx-auto h-screen bg-ezwhite-100 sm:border border-ezblack-200 relative"
+      class="max-w-screen-sm mx-auto h-screen bg-ezwhite-100 sm:border border-ezblack-200 relative text-left"
     >
       <router-view v-slot="{ Component }">
         <transition name="view">
